@@ -1,0 +1,11 @@
+<form method="POST" hx-post="{% url 'store:update_low_stock_level' item.id %}" hx-target="this">
+    {% csrf_token %}
+    <div class="modal-body">
+        <label for="low_stock_level">Restocking Level</label>
+        <input type="number" name="low_stock_level" id="low_stock_level" class="form-control"
+            value="{{ item.low_stock_level }}">
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
