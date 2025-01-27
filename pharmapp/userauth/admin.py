@@ -11,8 +11,13 @@ class ProfileAdmin(admin.ModelAdmin):
     list_display = ('full_name',)
     search_fields = ('full_name',)
 
+class ActivityLogAdmin(admin.ModelAdmin):
+    list_display = ('user', 'action', 'timestamp')
+    list_filter = ('timestamp',)
+    search_fields = ('user__username', 'action')
 
 
 admin.site.register(User, UserAdmin)
+admin.site.register(ActivityLog, ActivityLogAdmin)
 
 admin.site.register(Profile, ProfileAdmin)

@@ -48,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'userauth.middleware.AutoLogoutMiddleware',
+    'userauth.middleware.ActivityMiddleware',
 ]
 
 ROOT_URLCONF = 'pharmapp.urls'
@@ -139,3 +141,6 @@ MESSAGE_TAGS = {
     messages.INFO: 'info',
     messages.SUCCESS:'success',
 }
+
+
+AUTO_LOGOUT_DELAY = 3
