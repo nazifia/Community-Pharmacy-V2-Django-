@@ -2,3 +2,13 @@
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
+
+.nazz:active {
+  transform: scale(0.35);
+  box-shadow: none;
+}
+
+button,
+a:active {
+  transform: scale(0.35);
+}

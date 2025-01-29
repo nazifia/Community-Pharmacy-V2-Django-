@@ -144,3 +144,6 @@ MESSAGE_TAGS = {
 
 
 AUTO_LOGOUT_DELAY = 3
+
+
+LOGOUT_REDIRECT_URL = 'store:index'
