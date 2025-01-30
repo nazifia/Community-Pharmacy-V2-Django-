@@ -30,14 +30,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'store',
+    'django_htmx',
     'customer',
+    'userauth',
     'procurement',
     'retail',
-    'store',
     'wholesale',
     'supplier',
-    'userauth',
-    'django_htmx',
 ]
 
 MIDDLEWARE = [
